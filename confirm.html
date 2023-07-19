@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confirmation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    #confirmationMessage {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    #otpForm {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    label {
+      margin-right: 10px;
+      color: #555;
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      padding: 8px;
+      margin-bottom: 10px;
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 8px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #validationMessage {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Confirmation</h1>
+  <p id="confirmationMessage"></p>
+  <div id="otpForm">
+    <label for="otp">OTP:</label>
+    <input type="text" id="otp" name="otp">
+    <button onclick="validateOTP()">Validate</button>
+  </div>
+  <div id="validationMessage"></div>
+
+  <script src="confirm.js"></script>
+</body>
+</html>
